@@ -1,0 +1,165 @@
+main {
+    background-color: hsl(217, 54%, 11%);
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: hsl(216, 50%, 16%);
+
+    width: 350px;
+    height: auto;
+    padding: 25px;
+    
+    border-radius: 10px;
+}
+
+.cartao .imagem-nft{
+    display: flex;
+    position: relative;
+
+    cursor: pointer;
+}
+
+.cartao .imagem-nft .nft {
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+}
+
+.cartao .imagem-nft:hover::before {
+    content: '';
+
+    background-color:hsl(178, 100%, 50%);
+
+    width: 100%;
+    height: 300px;
+
+    border-radius: 10px;
+
+    position: absolute;
+
+    opacity: 0.4;
+
+    cursor: pointer;
+}
+
+.cartao .imagem-nft:hover::after {
+    content: '';
+    
+    background: url("../images/icon-view.svg") no-repeat center;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+}
+
+.informacoes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.informacoes h1 {
+    color: white;
+
+    margin-bottom: 15px;
+
+    cursor: pointer;
+}
+
+.informacoes h1:hover {
+    color: hsl(178, 100%, 50%);
+    transition: 0.5s;
+}
+
+.informacoes p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+.etherium-tempo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-bottom: 10px;
+}
+
+.etherium-tempo .etherium {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 30%;
+
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.etherium-tempo .tempo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    
+    width: 32%;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 10px;
+
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+.imagem-e-nome-criador {
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+}
+
+.imagem-e-nome-criador img {
+    border: 1px solid white;
+    border-radius: 100%;
+
+    margin-right: 10px;
+
+    width: 42px;
+}
+
+.imagem-e-nome-criador .nome-criador {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.imagem-e-nome-criador .nome-criador span {
+    color: white;
+    font-weight: 300;
+
+    cursor: pointer;
+}
+
+.imagem-e-nome-criador .nome-criador span:hover {
+    color: hsl(178, 100%, 50%);
+    transition: 0.5s;
+}
